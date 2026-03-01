@@ -59,10 +59,10 @@ export default function ContactForm({ source = "website", compact = false }: Con
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div className={compact ? "space-y-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
+    <form onSubmit={handleSubmit} className={compact ? "space-y-3" : "space-y-4"}>
+      <div className="grid grid-cols-2 gap-3">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-neutral-700 mb-1.5">
+          <label htmlFor="firstName" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             First Name *
           </label>
           <input
@@ -70,12 +70,12 @@ export default function ContactForm({ source = "website", compact = false }: Con
             id="firstName"
             name="firstName"
             required
-            className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800"
+            className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
             placeholder="John"
           />
         </div>
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-neutral-700 mb-1.5">
+          <label htmlFor="lastName" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             Last Name *
           </label>
           <input
@@ -83,15 +83,15 @@ export default function ContactForm({ source = "website", compact = false }: Con
             id="lastName"
             name="lastName"
             required
-            className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800"
+            className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
             placeholder="Doe"
           />
         </div>
       </div>
 
-      <div className={compact ? "space-y-4" : "grid grid-cols-1 sm:grid-cols-2 gap-4"}>
+      <div className="grid grid-cols-2 gap-3">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1.5">
+          <label htmlFor="email" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             Email *
           </label>
           <input
@@ -99,12 +99,12 @@ export default function ContactForm({ source = "website", compact = false }: Con
             id="email"
             name="email"
             required
-            className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800"
+            className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
             placeholder="john@example.com"
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-1.5">
+          <label htmlFor="phone" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             Phone *
           </label>
           <input
@@ -112,20 +112,20 @@ export default function ContactForm({ source = "website", compact = false }: Con
             id="phone"
             name="phone"
             required
-            className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800"
-            placeholder="(815) 555-0123"
+            className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
+            placeholder="(224) 555-0123"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="service" className="block text-sm font-medium text-neutral-700 mb-1.5">
+        <label htmlFor="service" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
           Service Interested In
         </label>
         <select
           id="service"
           name="service"
-          className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 bg-white"
+          className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 bg-white ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
         >
           <option value="">Select a service...</option>
           <option value="Kitchen Remodeling">Kitchen Remodeling</option>
@@ -137,14 +137,14 @@ export default function ContactForm({ source = "website", compact = false }: Con
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-1.5">
+        <label htmlFor="message" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
           Tell Us About Your Project
         </label>
         <textarea
           id="message"
           name="message"
-          rows={compact ? 3 : 5}
-          className="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 resize-none"
+          rows={compact ? 2 : 5}
+          className={`w-full rounded-lg border border-neutral-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all text-neutral-800 resize-none ${compact ? "px-3 py-2 text-sm" : "px-4 py-3"}`}
           placeholder="Describe your project, timeline, and any specific requirements..."
         />
       </div>
@@ -152,7 +152,7 @@ export default function ContactForm({ source = "website", compact = false }: Con
       <button
         type="submit"
         disabled={loading}
-        className="w-full gold-gradient text-white px-6 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity shadow-lg flex items-center justify-center gap-2 disabled:opacity-60"
+        className={`w-full gold-gradient text-white rounded-lg font-semibold hover:opacity-90 transition-opacity shadow-lg flex items-center justify-center gap-2 disabled:opacity-60 ${compact ? "px-4 py-2.5 text-sm" : "px-6 py-3.5"}`}
       >
         {loading ? (
           "Sending..."

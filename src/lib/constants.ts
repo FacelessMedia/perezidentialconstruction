@@ -1,7 +1,7 @@
 export const COMPANY = {
   name: "Perezidential Construction",
   legalName: "Perezidential Construction LLC",
-  phone: "(815) 000-0000",
+  phone: "(224) 249-2166",
   email: "info@perezidentialconstruction.com",
   address: {
     street: "8908 Highland Drive",

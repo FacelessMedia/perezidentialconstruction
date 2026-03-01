@@ -123,7 +123,7 @@ export default async function ServiceAreaPage({ params }: Props) {
                 and your quality of life.
               </p>
 
-              {/* Services in this area */}
+              {/* Services in this area - links to combo pages */}
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Our Services in {area.name}
               </h3>
@@ -131,17 +131,17 @@ export default async function ServiceAreaPage({ params }: Props) {
                 {SERVICES.map((service) => (
                   <Link
                     key={service.slug}
-                    href={`/services/${service.slug}`}
+                    href={`/services/${service.slug}/${area.slug}`}
                     className="service-card bg-neutral-50 rounded-xl p-6 border border-neutral-200 group"
                   >
                     <h4 className="text-lg font-bold text-primary mb-2 group-hover:text-accent transition-colors">
-                      {service.title}
+                      {service.title} in {area.name}
                     </h4>
                     <p className="text-neutral-600 text-sm leading-relaxed mb-3">
                       {service.shortDescription}
                     </p>
                     <span className="text-accent font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Learn More <ArrowRight className="w-4 h-4" />
+                      View Details <ArrowRight className="w-4 h-4" />
                     </span>
                   </Link>
                 ))}

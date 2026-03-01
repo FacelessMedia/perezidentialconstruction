@@ -57,5 +57,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...areaPages];
+  const comboPages: MetadataRoute.Sitemap = [];
+  for (const service of SERVICES) {
+    for (const area of SERVICE_AREAS) {
+      comboPages.push({
+        url: `${BASE_URL}/services/${service.slug}/${area.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.85,
+      });
+    }
+  }
+
+  return [...staticPages, ...servicePages, ...areaPages, ...comboPages];
 }

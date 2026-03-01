@@ -5,6 +5,9 @@ import {
   Bath,
   Home,
   Building,
+  Hammer,
+  House,
+  Factory,
   Star,
   ArrowRight,
   Shield,
@@ -22,6 +25,9 @@ const iconMap: Record<string, React.ReactNode> = {
   Bath: <Bath className="w-8 h-8" />,
   Home: <Home className="w-8 h-8" />,
   Building: <Building className="w-8 h-8" />,
+  Hammer: <Hammer className="w-8 h-8" />,
+  House: <House className="w-8 h-8" />,
+  Factory: <Factory className="w-8 h-8" />,
 };
 
 export default function HomePage() {

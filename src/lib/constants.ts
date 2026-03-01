@@ -15,7 +15,20 @@ export const COMPANY = {
   facebook: "https://www.facebook.com/perezidentialconstruction/",
   tagline: "Your Dream Project Starts Here",
   description:
-    "Perezidential Construction is a premier remodeling and construction company serving Wonder Lake, McHenry, Crystal Lake, Woodstock, and Lake in the Hills, IL. Specializing in kitchen remodeling, bathroom remodeling, whole house remodeling, and home additions.",
+    "Perezidential Construction is a premier remodeling and construction company serving Wonder Lake, McHenry, Crystal Lake, Woodstock, and Lake in the Hills, IL. Specializing in kitchen remodeling, bathroom remodeling, whole house remodeling, home additions, new home construction, ADU & guest house construction, and modular homes.",
+  owner: {
+    name: "Steven Perez",
+    title: "Owner & General Contractor",
+    bio: "Steven Perez began working as a Carpenter and General Contractor and founded Perezidential Construction in 2016. He got into the industry after seeing how many contractors would walk off jobs with their clients' money — and more importantly, their dreams of having their remodeling or construction project come to life. Over the years he mastered many trades, which proved beneficial not only for himself but for his company as well. He was able to provide top-quality workmanship, avoid the corner-cutting that plagues the industry, and problem-solve quickly and efficiently by knowing the ins and outs of how a house is constructed and how things work together for maximum functionality. For every project, Steven has given his all — his time, his strength, and his expertise — and it has paid off. Today Perezidential Construction is growing beautifully, and our clients are happy to keep doing business with us.",
+  },
+  specialties:
+    "Remodeling and new construction for both residential and commercial. Painting, drywall, framing, electrical, kitchen/bath/basement renovation, tile work, flooring, and much more. We can build anything from the ground up — and sometimes under.",
+  hours: {
+    weekdays: "6:00 AM - 9:00 PM",
+    saturday: "Closed",
+    sunday: "Closed",
+    display: "Mon-Fri: 6:00 AM - 9:00 PM | Sat-Sun: Closed",
+  },
 };
 
 export const SERVICES = [
@@ -94,6 +107,63 @@ export const SERVICES = [
       "Seamless Architectural Integration",
     ],
     icon: "Building",
+  },
+  {
+    title: "New Home Construction",
+    slug: "new-home-construction",
+    shortDescription:
+      "Build your dream home from the ground up with custom single-family home construction tailored to your vision and lifestyle.",
+    description:
+      "Why settle for someone else's idea of a dream home? Perezidential Construction builds custom single-family homes from the ground up, giving you complete control over every detail — from the floor plan and foundation to the fixtures and finishes. Owner Steven Perez mastered every trade in the construction process, which means your new home is built with an understanding of how every system works together for maximum functionality and longevity. We manage the entire build process: site preparation, foundation, framing, roofing, siding, windows, doors, plumbing, electrical, HVAC, insulation, drywall, flooring, cabinetry, countertops, trim, paint, and landscaping. Whether you have architectural plans ready or need help designing your home from scratch, we bring your vision to life with quality materials and expert craftsmanship.",
+    features: [
+      "Custom Floor Plan Design & Build",
+      "Foundation & Site Preparation",
+      "Structural Framing & Roofing",
+      "Complete Plumbing & Electrical Systems",
+      "HVAC Installation & Ductwork",
+      "Interior & Exterior Finishing",
+      "Energy-Efficient Construction Methods",
+      "Permit Management & Code Compliance",
+    ],
+    icon: "Hammer",
+  },
+  {
+    title: "ADU & Guest House Construction",
+    slug: "adu-guest-house-construction",
+    shortDescription:
+      "Add an accessory dwelling unit or guest house to your property for rental income, multi-generational living, or dedicated workspace.",
+    description:
+      "Accessory Dwelling Units (ADUs) and guest houses are one of the smartest investments homeowners can make. Whether you want rental income, a private space for aging parents, a home office detached from the main house, or a guest suite for visitors, we design and build standalone structures that maximize your property's potential. Our ADU and guest house construction includes everything from design and permitting through foundation, framing, and full interior finishing — delivering a complete, move-in-ready living space on your existing property. We navigate local zoning regulations and building codes to ensure your ADU is fully compliant and permitted.",
+    features: [
+      "Detached ADU Design & Construction",
+      "Guest House & In-Law Suite Builds",
+      "Garage-to-ADU Conversions",
+      "Full Kitchen & Bathroom Installation",
+      "Independent Utility Connections",
+      "Zoning & Permit Navigation",
+      "ADA-Accessible Design Options",
+      "Energy-Efficient & Code-Compliant Construction",
+    ],
+    icon: "House",
+  },
+  {
+    title: "Modular & Manufactured Homes",
+    slug: "modular-manufactured-homes",
+    shortDescription:
+      "Professional installation, setup, and customization of modular and manufactured homes with expert site preparation and finishing.",
+    description:
+      "Modular and manufactured homes offer an affordable, efficient path to homeownership without sacrificing quality. Perezidential Construction provides comprehensive services for modular and manufactured home projects — from site preparation and foundation work to delivery coordination, set-up, utility connections, skirting, decks, and interior customization. We also handle renovations and additions to existing manufactured homes, helping homeowners upgrade their living spaces with the same quality craftsmanship we bring to site-built construction. Our experience with both traditional and factory-built construction means we understand the unique requirements of modular and manufactured homes and deliver results that exceed expectations.",
+    features: [
+      "Site Preparation & Foundation Work",
+      "Modular Home Assembly & Set-Up",
+      "Manufactured Home Installation",
+      "Utility Hookups (Water, Sewer, Electric, Gas)",
+      "Skirting, Siding & Exterior Finishing",
+      "Deck, Porch & Patio Construction",
+      "Interior Customization & Upgrades",
+      "Manufactured Home Renovations & Additions",
+    ],
+    icon: "Factory",
   },
 ];
 

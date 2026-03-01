@@ -83,6 +83,57 @@ const serviceFaqs: Record<string, { question: string; answer: string }[]> = {
         "Absolutely. We pride ourselves on seamless architectural integration. We match rooflines, siding, windows, and interior finishes so your addition looks like it was always part of the original home.",
     },
   ],
+  "new-home-construction": [
+    {
+      question: "How long does it take to build a new home?",
+      answer:
+        "New home construction typically takes 6-12 months depending on size, complexity, and weather conditions. We provide a detailed timeline during the planning phase and keep you updated throughout the build process.",
+    },
+    {
+      question: "Do I need to have plans before contacting you?",
+      answer:
+        "No. While we can work from your existing architectural plans, we also help homeowners develop custom floor plans from scratch. We'll work with you to design a home that fits your lot, budget, and lifestyle.",
+    },
+    {
+      question: "What does new home construction cost per square foot?",
+      answer:
+        "New home construction costs vary significantly based on specifications, materials, and finishes. We provide detailed, transparent estimates after understanding your project scope. Contact us for a free consultation and quote.",
+    },
+  ],
+  "adu-guest-house-construction": [
+    {
+      question: "Do I need a permit to build an ADU or guest house?",
+      answer:
+        "Yes, ADUs and guest houses require building permits in McHenry County. We handle all zoning verification, permit applications, and inspections to ensure your ADU is fully compliant with local regulations.",
+    },
+    {
+      question: "How much does it cost to build an ADU?",
+      answer:
+        "ADU costs depend on size, features, and site conditions. A basic studio unit starts at a different price point than a full one-bedroom with kitchen and bathroom. We provide free, detailed estimates for your specific project.",
+    },
+    {
+      question: "Can I rent out my ADU?",
+      answer:
+        "Rental regulations for ADUs vary by municipality and zoning district. We research your specific property's zoning during the planning phase and advise you on what's permitted. Many McHenry County homeowners successfully use ADUs as rental properties.",
+    },
+  ],
+  "modular-manufactured-homes": [
+    {
+      question: "Do you install new manufactured homes?",
+      answer:
+        "Yes, we provide complete manufactured and modular home installation services including site preparation, foundation work, delivery coordination, set-up, utility connections, skirting, and all finishing work.",
+    },
+    {
+      question: "Can you remodel an existing manufactured home?",
+      answer:
+        "Absolutely. We specialize in manufactured home renovations including kitchen and bathroom remodels, flooring replacement, window upgrades, room additions, deck construction, and complete interior refreshes.",
+    },
+    {
+      question: "What's the difference between modular and manufactured homes?",
+      answer:
+        "Modular homes are built in sections at a factory and assembled on-site on a permanent foundation, built to local building codes. Manufactured homes (formerly mobile homes) are built entirely in a factory on a steel chassis and meet HUD federal codes. We work with both types.",
+    },
+  ],
 };
 
 export async function generateStaticParams() {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChefHat, Bath, Home, Building, ArrowRight, CheckCircle } from "lucide-react";
+import { ChefHat, Bath, Home, Building, Hammer, House, Factory, ArrowRight, CheckCircle } from "lucide-react";
 import { COMPANY, SERVICES } from "@/lib/constants";
 import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 import ContactForm from "@/components/ContactForm";
@@ -8,7 +8,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Remodeling & Construction Services in McHenry County, IL",
   description:
-    "Explore our full range of remodeling services: kitchen remodeling, bathroom remodeling, whole house remodeling, and home additions. Serving Wonder Lake, McHenry, Crystal Lake & surrounding areas.",
+    "Explore our full range of remodeling and construction services: kitchen remodeling, bathroom remodeling, whole house remodeling, home additions, new home construction, ADU & guest house construction, and modular homes. Serving Wonder Lake, McHenry, Crystal Lake & surrounding areas.",
   alternates: {
     canonical: `${COMPANY.url}/services`,
   },
@@ -19,6 +19,9 @@ const iconMap: Record<string, React.ReactNode> = {
   Bath: <Bath className="w-10 h-10" />,
   Home: <Home className="w-10 h-10" />,
   Building: <Building className="w-10 h-10" />,
+  Hammer: <Hammer className="w-10 h-10" />,
+  House: <House className="w-10 h-10" />,
+  Factory: <Factory className="w-10 h-10" />,
 };
 
 export default function ServicesPage() {

@@ -61,23 +61,33 @@ export default function AboutPage() {
                 From Dream to Reality
               </h2>
               <p className="text-neutral-600 text-lg leading-relaxed mb-6">
-                Perezidential Construction started out as a distant dream. Established
-                in {COMPANY.founded}, we may be newer to the game, but the way we handle
-                our business stands up to the big boys.
+                Perezidential Construction was established in {COMPANY.founded} by
+                founder and owner Steven Perez. What started as a distant dream has
+                grown into one of McHenry County&apos;s most trusted remodeling and
+                construction companies — built on a foundation of honesty, quality
+                craftsmanship, and an unwavering commitment to our clients.
               </p>
               <p className="text-neutral-600 leading-relaxed mb-6">
-                After years in the construction industry, we knew there was a better
-                way to serve homeowners — with honesty, transparency, and
-                craftsmanship that speaks for itself. We founded Perezidential
-                Construction with a simple promise: we do what we say, and say what
-                we do.
+                Steven got into the industry after seeing how many contractors would
+                walk off jobs with their clients&apos; money — and more importantly,
+                their dreams of having their project come to life. Over the years he
+                mastered many trades, allowing him to provide top-quality workmanship,
+                avoid the corner-cutting that plagues the industry, and problem-solve
+                quickly by knowing the ins and outs of how a house is constructed.
+              </p>
+              <p className="text-neutral-600 leading-relaxed mb-6">
+                Our services span remodeling and new construction for both residential
+                and commercial projects. We handle painting, drywall, framing,
+                electrical, kitchen and bath renovations, tile work, flooring, and
+                much more. We can build anything from the ground up — and sometimes
+                under.
               </p>
               <p className="text-neutral-600 leading-relaxed mb-8">
-                Today, we&apos;re proud to be one of McHenry County&apos;s most
-                trusted remodeling companies, serving Wonder Lake, McHenry, Crystal
-                Lake, Woodstock, Lake in the Hills, and surrounding communities.
-                Every project we take on — from a kitchen remodel to a full home
-                addition — receives our complete dedication and attention to detail.
+                Today, Perezidential Construction is growing beautifully, serving
+                Wonder Lake, McHenry, Crystal Lake, Woodstock, Lake in the Hills,
+                and surrounding communities. Our clients are happy to keep doing
+                business with us — and that&apos;s the greatest compliment we
+                could ask for.
               </p>
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-neutral-200">
                 <div>

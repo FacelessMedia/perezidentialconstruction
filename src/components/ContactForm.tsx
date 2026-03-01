@@ -60,7 +60,7 @@ export default function ContactForm({ source = "website", compact = false }: Con
 
   return (
     <form onSubmit={handleSubmit} className={compact ? "space-y-3" : "space-y-4"}>
-      <div className="grid grid-cols-2 gap-3">
+      <div className={compact ? "grid grid-cols-2 gap-3" : "grid grid-cols-1 sm:grid-cols-2 gap-3"}>
         <div>
           <label htmlFor="firstName" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             First Name *
@@ -89,7 +89,7 @@ export default function ContactForm({ source = "website", compact = false }: Con
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className={compact ? "grid grid-cols-2 gap-3" : "grid grid-cols-1 sm:grid-cols-2 gap-3"}>
         <div>
           <label htmlFor="email" className={`block font-medium text-neutral-700 ${compact ? "text-xs mb-1" : "text-sm mb-1.5"}`}>
             Email *

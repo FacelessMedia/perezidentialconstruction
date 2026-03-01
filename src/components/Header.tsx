@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
@@ -42,14 +43,14 @@ export default function Header() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 shrink-0">
-              <div className="flex flex-col">
-                <span className="text-xl sm:text-2xl font-bold tracking-tight text-primary">
-                  PEREZIDENTIAL
-                </span>
-                <span className="text-xs sm:text-sm font-medium tracking-[0.2em] text-accent uppercase">
-                  Construction
-                </span>
-              </div>
+              <Image
+                src="/images/perezidential construction logo.png"
+                alt="Perezidential Construction Logo"
+                width={220}
+                height={60}
+                className="h-12 sm:h-14 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Nav */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ChefHat,
   Bath,
@@ -207,11 +208,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-neutral-200 rounded-2xl aspect-[4/3] flex items-center justify-center">
-                <div className="text-center text-neutral-500 p-8">
-                  <Building className="w-16 h-16 mx-auto mb-4 opacity-50" />
-                  <p className="text-sm">Project Photo</p>
-                </div>
+              <div className="bg-neutral-200 rounded-2xl aspect-[4/3] overflow-hidden relative">
+                <Image
+                  src="/images/520385268_1360936909368705_8169878145026067144_n.jpg"
+                  alt="Perezidential Construction - Front porch remodel project"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-accent text-white p-6 rounded-xl shadow-lg hidden sm:block">
                 <p className="text-3xl font-bold">9+</p>
